@@ -27,8 +27,7 @@ public class Test_Get_Method_01 {
 		.body("status", Is.is("success"));
 		
 	}
-	
-	
+
 	
 	
 }

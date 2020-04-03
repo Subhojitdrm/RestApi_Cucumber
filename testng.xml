@@ -4,6 +4,7 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="Test_o1.Test_Get_Method_01"/>
+      <class name="Test_o1.ReadJson"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

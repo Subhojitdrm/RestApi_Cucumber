@@ -1,21 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="10480" started-at="2020-04-03T20:40:29Z" finished-at="2020-04-03T20:40:40Z">
+  <suite name="Suite" duration-ms="7436" started-at="2020-04-03T23:05:49Z" finished-at="2020-04-03T23:05:57Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="10480" started-at="2020-04-03T20:40:29Z" finished-at="2020-04-03T20:40:40Z">
+    <test name="Test" duration-ms="7436" started-at="2020-04-03T23:05:49Z" finished-at="2020-04-03T23:05:57Z">
       <class name="Test_o1.Test_Get_Method_01">
-        <test-method status="PASS" signature="thisIs()[pri:0, instance:Test_o1.Test_Get_Method_01@61832929]" name="thisIs" duration-ms="6638" started-at="2020-04-03T20:40:29Z" finished-at="2020-04-03T20:40:36Z">
+        <test-method status="PASS" signature="thisIs()[pri:0, instance:Test_o1.Test_Get_Method_01@77caeb3e]" name="thisIs" duration-ms="4283" started-at="2020-04-03T23:05:49Z" finished-at="2020-04-03T23:05:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- thisIs -->
-        <test-method status="PASS" signature="validateReport()[pri:0, instance:Test_o1.Test_Get_Method_01@61832929]" name="validateReport" duration-ms="3743" started-at="2020-04-03T20:40:36Z" finished-at="2020-04-03T20:40:40Z">
+        <test-method status="PASS" signature="validateReport()[pri:0, instance:Test_o1.Test_Get_Method_01@77caeb3e]" name="validateReport" duration-ms="1882" started-at="2020-04-03T23:05:54Z" finished-at="2020-04-03T23:05:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateReport -->
       </class> <!-- Test_o1.Test_Get_Method_01 -->
+      <class name="Test_o1.ReadJson">
+        <test-method status="PASS" signature="test02()[pri:0, instance:Test_o1.ReadJson@1e88b3c]" name="test02" duration-ms="759" started-at="2020-04-03T23:05:55Z" finished-at="2020-04-03T23:05:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test02 -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Test_o1.ReadJson@1e88b3c]" name="setUp" is-config="true" duration-ms="0" started-at="2020-04-03T23:05:55Z" finished-at="2020-04-03T23:05:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Test_o1.ReadJson@1e88b3c]" name="setUp" is-config="true" duration-ms="0" started-at="2020-04-03T23:05:56Z" finished-at="2020-04-03T23:05:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="test03()[pri:0, instance:Test_o1.ReadJson@1e88b3c]" name="test03" duration-ms="397" started-at="2020-04-03T23:05:56Z" finished-at="2020-04-03T23:05:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test03 -->
+      </class> <!-- Test_o1.ReadJson -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
