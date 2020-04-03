@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="TestRestAssured" duration-ms="16" started-at="2020-04-03T19:33:17Z" finished-at="2020-04-03T19:33:17Z">
+  <suite name="Suite" duration-ms="10480" started-at="2020-04-03T20:40:29Z" finished-at="2020-04-03T20:40:40Z">
     <groups>
     </groups>
-    <test name="Test_01" duration-ms="16" started-at="2020-04-03T19:33:17Z" finished-at="2020-04-03T19:33:17Z">
-    </test> <!-- Test_01 -->
-  </suite> <!-- TestRestAssured -->
+    <test name="Test" duration-ms="10480" started-at="2020-04-03T20:40:29Z" finished-at="2020-04-03T20:40:40Z">
+      <class name="Test_o1.Test_Get_Method_01">
+        <test-method status="PASS" signature="thisIs()[pri:0, instance:Test_o1.Test_Get_Method_01@61832929]" name="thisIs" duration-ms="6638" started-at="2020-04-03T20:40:29Z" finished-at="2020-04-03T20:40:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- thisIs -->
+        <test-method status="PASS" signature="validateReport()[pri:0, instance:Test_o1.Test_Get_Method_01@61832929]" name="validateReport" duration-ms="3743" started-at="2020-04-03T20:40:36Z" finished-at="2020-04-03T20:40:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateReport -->
+      </class> <!-- Test_o1.Test_Get_Method_01 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
