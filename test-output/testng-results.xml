@@ -1,39 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="7436" started-at="2020-04-03T23:05:49Z" finished-at="2020-04-03T23:05:57Z">
+  <suite name="Default suite" duration-ms="305" started-at="2020-04-04T00:51:21Z" finished-at="2020-04-04T00:51:21Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="7436" started-at="2020-04-03T23:05:49Z" finished-at="2020-04-03T23:05:57Z">
-      <class name="Test_o1.Test_Get_Method_01">
-        <test-method status="PASS" signature="thisIs()[pri:0, instance:Test_o1.Test_Get_Method_01@77caeb3e]" name="thisIs" duration-ms="4283" started-at="2020-04-03T23:05:49Z" finished-at="2020-04-03T23:05:54Z">
+    <test name="Default test" duration-ms="305" started-at="2020-04-04T00:51:21Z" finished-at="2020-04-04T00:51:21Z">
+      <class name="TestUtils.ReadTestData">
+        <test-method status="FAIL" signature="dada()[pri:0, instance:TestUtils.ReadTestData@7cd62f43]" name="dada" duration-ms="229" started-at="2020-04-04T00:51:21Z" finished-at="2020-04-04T00:51:21Z">
+          <exception class="java.lang.IllegalAccessError">
+            <message>
+              <![CDATA[tried to access method org.apache.poi.util.POILogger.log(ILjava/lang/Object;)V from class org.apache.poi.openxml4j.opc.PackageRelationshipCollection]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalAccessError: tried to access method org.apache.poi.util.POILogger.log(ILjava/lang/Object;)V from class org.apache.poi.openxml4j.opc.PackageRelationshipCollection
+at org.apache.poi.openxml4j.opc.PackageRelationshipCollection.parseRelationshipsPart(PackageRelationshipCollection.java:313)
+at org.apache.poi.openxml4j.opc.PackageRelationshipCollection.<init>(PackageRelationshipCollection.java:163)
+at org.apache.poi.openxml4j.opc.PackageRelationshipCollection.<init>(PackageRelationshipCollection.java:131)
+at org.apache.poi.openxml4j.opc.PackagePart.loadRelationships(PackagePart.java:559)
+at org.apache.poi.openxml4j.opc.PackagePart.<init>(PackagePart.java:112)
+at org.apache.poi.openxml4j.opc.PackagePart.<init>(PackagePart.java:83)
+at org.apache.poi.openxml4j.opc.PackagePart.<init>(PackagePart.java:128)
+at org.apache.poi.openxml4j.opc.ZipPackagePart.<init>(ZipPackagePart.java:78)
+at org.apache.poi.openxml4j.opc.ZipPackage.getPartsImpl(ZipPackage.java:243)
+at org.apache.poi.openxml4j.opc.OPCPackage.getParts(OPCPackage.java:673)
+at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:274)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:87)
+at TestUtils.ReadTestData.readData(ReadTestData.java:20)
+at TestUtils.ReadTestData.dada(ReadTestData.java:33)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalAccessError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- thisIs -->
-        <test-method status="PASS" signature="validateReport()[pri:0, instance:Test_o1.Test_Get_Method_01@77caeb3e]" name="validateReport" duration-ms="1882" started-at="2020-04-03T23:05:54Z" finished-at="2020-04-03T23:05:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateReport -->
-      </class> <!-- Test_o1.Test_Get_Method_01 -->
-      <class name="Test_o1.ReadJson">
-        <test-method status="PASS" signature="test02()[pri:0, instance:Test_o1.ReadJson@1e88b3c]" name="test02" duration-ms="759" started-at="2020-04-03T23:05:55Z" finished-at="2020-04-03T23:05:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test02 -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Test_o1.ReadJson@1e88b3c]" name="setUp" is-config="true" duration-ms="0" started-at="2020-04-03T23:05:55Z" finished-at="2020-04-03T23:05:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Test_o1.ReadJson@1e88b3c]" name="setUp" is-config="true" duration-ms="0" started-at="2020-04-03T23:05:56Z" finished-at="2020-04-03T23:05:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="test03()[pri:0, instance:Test_o1.ReadJson@1e88b3c]" name="test03" duration-ms="397" started-at="2020-04-03T23:05:56Z" finished-at="2020-04-03T23:05:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test03 -->
-      </class> <!-- Test_o1.ReadJson -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- dada -->
+      </class> <!-- TestUtils.ReadTestData -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

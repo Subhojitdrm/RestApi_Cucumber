@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Apr 04 04:35:49 IST 2020</td>
+<td>Started on:</td><td>Sat Apr 04 06:11:06 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>7 seconds (7436 ms)</td>
+<tr><td>Total time:</td><td>7 seconds (7125 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -78,22 +78,79 @@ function toggleAllBoxes() {
 <td title='Test_o1.ReadJson.test02()'><b>test02</b><br>Test class: Test_o1.ReadJson</td>
 <td></td>
 <td>0</td>
-<td>Test_o1.ReadJson@1e88b3c</td></tr>
-<tr>
-<td title='Test_o1.ReadJson.test03()'><b>test03</b><br>Test class: Test_o1.ReadJson</td>
-<td></td>
-<td>0</td>
-<td>Test_o1.ReadJson@1e88b3c</td></tr>
+<td>Test_o1.ReadJson@4dfa3a9d</td></tr>
 <tr>
 <td title='Test_o1.Test_Get_Method_01.thisIs()'><b>thisIs</b><br>Test class: Test_o1.Test_Get_Method_01</td>
 <td></td>
 <td>4</td>
-<td>Test_o1.Test_Get_Method_01@77caeb3e</td></tr>
+<td>Test_o1.Test_Get_Method_01@146ba0ac</td></tr>
 <tr>
 <td title='Test_o1.Test_Get_Method_01.validateReport()'><b>validateReport</b><br>Test class: Test_o1.Test_Get_Method_01</td>
 <td></td>
 <td>1</td>
-<td>Test_o1.Test_Get_Method_01@77caeb3e</td></tr>
+<td>Test_o1.Test_Get_Method_01@146ba0ac</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Test_o1.ReadJson.test03()'><b>test03</b><br>Test class: Test_o1.ReadJson</td>
+<td><div><pre>java.lang.RuntimeException: java.lang.NoSuchFieldError: RAW_XML_FILE_HEADER
+Caused by: java.lang.NoSuchFieldError: RAW_XML_FILE_HEADER
+	at org.apache.poi.poifs.filesystem.FileMagic.&lt;clinit&gt;(FileMagic.java:42)
+	at org.apache.poi.poifs.filesystem.DocumentFactoryHelper.hasOOXMLHeader(DocumentFactoryHelper.java:97)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:180)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:140)
+	at TestUtils.ReadTestData.readData(ReadTestData.java:19)
+	at Test_o1.ReadJson.getdata(ReadJson.java:32)
+	... 22 more
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1264701638", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1264701638'><pre>java.lang.RuntimeException: java.lang.NoSuchFieldError: RAW_XML_FILE_HEADER
+	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:131)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NoSuchFieldError: RAW_XML_FILE_HEADER
+	at org.apache.poi.poifs.filesystem.FileMagic.&lt;clinit&gt;(FileMagic.java:42)
+	at org.apache.poi.poifs.filesystem.DocumentFactoryHelper.hasOOXMLHeader(DocumentFactoryHelper.java:97)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:180)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:140)
+	at TestUtils.ReadTestData.readData(ReadTestData.java:19)
+	at Test_o1.ReadJson.getdata(ReadJson.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+	... 22 more
+</pre></div></td>
+<td>0</td>
+<td>Test_o1.ReadJson@4dfa3a9d</td></tr>
 </table><p>
 </body>
 </html>
